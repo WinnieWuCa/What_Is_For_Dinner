@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gluten Free</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
+  <link href="../static/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+  <!-- Jumbotron -->
+
+<div class="jumbotron text-center" style="background-image: url('/static/sara-dubler-710148-unsplash.jpg'); background-size: 100%; height: 35%;">
+   
+      <h2 class="my-0 font-weight-normal">
+      <font color = "white">What's for dinner?</font></br>
+      </h2>
+  </div> 
+
+  <div class="wrapper">
+      <div class="row">
+          <div class="col-md-12">
+          <nav class="navbar navbar-inverse" style="background-color:black;">
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span> 
+                 </button>
+             </div>
+             <div class="collapse navbar-collapse" id="myNavbar">
+                 <ul class="nav navbar-nav navbar-left">
+                     <li><a href="/">Main Page</a></li> 
+                 </ul>
+             </div>
+         </nav>    
+        </div> 
+      </div>  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <div id="table-area" class="">
+              <table id="ufo-table" class="table table-striped">
+                <thead>
+                  <tr>
+                    <th class="table-head">Restaurant</th>
+                    <th class="table-head">Rating</th>
+                    <th class="table-head">Tel Number</th>
+                    <th class="table-head">Website</th>
+                  </tr>
+                </thead>
+                <tbody style="cursor:pointer"></tbody>
+              </table>
+            </div>
+          </div>
+        <div class="col-md-12">
+          <div id="table-area" class="">
+            <table id="general_info-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <!--th class="table-head">Review</th>-->
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <!--span class="bottom">What is for dinner?!?</span>-->
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="/static/js/list.js"></script>
+</body>
+
+</html>

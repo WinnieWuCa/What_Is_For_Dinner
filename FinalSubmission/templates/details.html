@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Gluten Free</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Jumbotron -->
+
+<div class="jumbotron text-center" style="background-image: url('/static/sara-dubler-710148-unsplash.jpg'); background-size: 100%; height: 35%;">
+   
+      <h2 class="my-0 font-weight-normal">
+      <font color = "white">What's for dinner?</font></br>
+      </h2>
+  </div> 
+
+  <div class="wrapper">
+        <div class="row">
+          <div class="col-md-12">
+          <nav class="navbar navbar-inverse" style="background-color:black;">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                 <ul class="nav navbar-nav navbar-left">
+                     <li><a href="/">Main Page</a></li> 
+                 </ul>
+             </div>
+         </nav>    
+        </div> 
+      </div>  
+    <div class="container"> 
+        <div class="row">
+            <div class="col-md-12">
+            <!--div class="col-md-offset-2 col-md-10"-->
+              <!--span id="nameSelected"></span-->
+              <h3>
+                <span id="name_selected">
+              </h3>
+              <!--div id="name_selected"></div-->
+              <form method="POST" action='' role="form" name="updateform" id="update_form">
+              <!--form action="/update"+%{name} method="POST" action="/send" role="form" name="updateform"-->
+              <div class="form-group">
+                  <input type="checkbox" id="gluten" name="gluten" onclick="changeValueCheckbox(this)">Gluten Free<br>
+                  <input type="hidden"   id="gluten" name="gluten" value="false" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="dairy" name="dairy" onclick="changeValueCheckbox(this)">Dairy Free<br>
+                  <input type="hidden"   id="dairy" name="dairy" value="false" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="vegan" name="vegan" onclick="changeValueCheckbox(this)">Vegan<br>
+                  <input type="hidden"   id="vegan" name="vegan" value="false" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="vegetarian" name="vegetarian" onclick="changeValueCheckbox(this)">Vegetarian<br>
+                  <input type="hidden"   id="vegetarian" name="vegetarian" value="false" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="out" name="out" onclick="changeValueCheckbox(this)">OUT<br>
+                  <input type="hidden"   id="out" name="out" value="false" />
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="favorite" name="favorite" onclick="changeValueCheckbox(this)">Favorite<br>
+                  <input type="hidden"   id="favorite" name="favorite" value="false" />
+                </div>
+                
+                <div class="form-group">
+                  <label for="myComment">My Comment</label>
+                  <input type="text" class="form-control" id="my_comment" name="my_comment" placeholder="Like it?">
+                </div>
+
+                <input type="submit" value="Update" class="btn btn-primary">
+              </form>
+            </div>
+          </div>  
+
+      <div class="row margin-top-50">
+        <div class="col-md-12">
+            <div id="table-area" class="">
+              <table id="my-table" class="table table-striped">
+                <thead>
+                  <tr>
+                  <!--tr onclick="document.location='bar.html'" style="cursor:hand"-->
+                    <th class="table-head">Yelp Reviews</th>
+                    <th class="table-head">Sentiment Score</th>
+                  </tr>
+                </thead>
+                <tbody style="cursor:pointer"></tbody>
+              </table>
+            </div>
+          </div>
+        <div class="col-md-12">
+          <div id="table-area" class="">
+            <table id="general_info-table" class="table table-striped">
+              <thead>
+                <tr>
+                  <!--th class="table-head">Review</th>-->
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <!--span class="bottom">What is for dinner?!?</span>-->
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="../static/js/details.js"></script>
+</body>
+
+</html>

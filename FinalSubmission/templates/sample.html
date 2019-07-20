@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/955/955073.svg">
+
+    <title>EATinerary</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/product.css" rel="stylesheet">
+	
+  </head>
+  <body>
+
+    <!-- Light Nav Bar -->
+	<!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white	 border-bottom shadow-sm">
+	  <h5 class="my-0 mr-md-auto font-weight-normal">
+		<a href="/"><img src="/static/Images/logo.JPG" alt="Eatinerary" width=40% height=40% >
+	  </h5>
+	  <nav class="my-2 my-md-0 mr-md-3">
+		<a class="p-2 text-dark" href="/map.html">Map</a>
+		<a class="p-2 text-dark" href="/map2.html">Map2</a>
+		<a class="p-2 text-dark" href="/map3.html">Map3</a>    
+	  </nav>
+	</div> -->
+
+	<!-- Jumbotron -->
+    <div class="jumbotron text-center" style="background-image: url(	https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v149-lp-249-foodillutration_2.jpg?auto=format&bg=F4F4F3&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-1.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1000&s=9f6eb8ccdf258d69542f9ba0aa182058); background-size: 100%; height: 100%;">
+		<h2 class="my-0 font-weight-normal">
+			<br>Eatinerary
+			<br>Web Application
+		</h2>
+    </div>
+
+	<!-- CARDS -->     
+	<div class="container">		
+	  <div class="row">
+		<!-- CARD 1 -->
+		<!-- <div class="col-md-6">
+		  <div class="card-deck mb-3 text-left">
+			<div class="card mb-4 shadow-sm">
+			  <div class="card-header">
+				<h2 class="my-0 font-weight-normal">Get Started!</h2>
+			  </div>
+			  <div class="card-body"> -->
+			  <!-- FORM 1 -->
+			<!-- <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Form to generate a map</div>
+              <div class="panel-body">
+                <form action="/map.html" roles="form" name="generateMap">
+                  <div class="form-group"> -->
+                    <!--Code to filter by city-->					
+                    <!-- <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">      
+                        <input class="form-control" id="city" name="city" type="text" placeholder="Enter a city">
+                      </li>
+                    </ul> -->
+                    <!--Code to filter by stars-->
+                    <!-- <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">      
+                        <input class="form-control" id="stars" type="text" name="stars" placeholder="Enter the star rating">
+                      </li>
+                    </ul>
+				  </div>
+                  <button id="filter-btn" type="submit" class="btn btn-default btn-lg btn-block">Make me a map!</button>
+					</form>
+				  </div>
+				</div>
+				</aside>		
+		<		</div>                 	 
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<br><br> -->	
+		<!-- CARD 1 -->		
+		<div class="col-md-6">
+		<div class="fill">
+		  <div class="card-deck mb-3 text-left">
+			<div class="card mb-4 shadow-sm">
+			  <div class="card-header">
+				<h2 class="my-0 font-weight-normal">Get Started!</h2>
+			  </div>
+			  <div class="card-body">
+			  <!-- FORM 1 -->
+			  <form method="POST" action="/" roles="form" name="mapForm">
+			  <div class="form-group">
+				<label for="inputCity">Enter a City in Greater Toronto Area: </label>
+				<input type="text" class="form-control" id="inputCity" name="city" placeholder="North York">
+			  </div>
+			  <div class="form-group">
+				<label for="selectStars">Choose a Star Rating:</label>
+				<select class="form-control" id="selectStars" name="stars">
+					<option>0.5</option>
+					<option>1</option>
+					<option>1.5</option>
+					<option>2</option>
+					<option>2.5</option>
+					<option>3</option>
+					<option>3.5</option>
+					<option>4</option>
+					<option>4.5</option>
+					<option>5</option>
+				</select>
+			  </div>
+			  
+			  <!-- Submit -->
+			  <input type="submit" value="Make me a map!" class="btn btn-primary"></input>
+			  </form>					
+			  </div><!-- End of card-body -->
+			</div><!-- End of card -->
+		  </div><!-- End of card-deck -->
+		</div><!-- End of fill -->
+		</div><!-- End of col6 -->			
+		
+		<div class="col-md-6">
+		  <div class="drawing">
+			<br><br>
+            <img src="https://i.gifer.com/7N1a.gif" style="max-width:100%; max-height: auto;" alt="Map drawing">
+		  </div>
+        </div>		
+	  </div><!-- End of row -->
+	</div><!-- End of container -->
+	
+	
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/static/css/jquery-3.2.1.slim.min.js.download" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="/static/css/popper.min.js.download"></script>
+    <script src="/static/css/bootstrap.min.js.download"></script>
+	
+	<!-- Popmotion -->
+	<script src="https://unpkg.com/popmotion/dist/popmotion.global.min.js"></script>
+		
+	<script>
+	const fill = popmotion.styler(document.querySelector('.fill'))
+	popmotion.tween({ 
+		from: { 
+			scale: .2, 
+			opacity: 0,
+			y: -300
+		},
+		to: { 
+			scale: 1, 
+			opacity: 1,
+			y: 0
+		},
+		duration: 2000
+	}).start(fill.set);
+	</script>
+
+	<script>
+	const drawing = popmotion.styler(document.querySelector('.drawing'))
+	popmotion.tween({ 
+		from: { 
+			scale: .2, 
+			opacity: 0,
+		},
+		to: { 
+			scale: 1, 
+			opacity: 1,
+		},
+		duration: 2000
+	}).start(drawing.set);
+	</script>
+	
+	<!-- D3 -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+
+	<!-- JS -->
+	<script src="static/js/EATinerary.js"></script>
+
+</body></html>

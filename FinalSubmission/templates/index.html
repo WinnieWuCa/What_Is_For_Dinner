@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>What Is For Dinner</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="../static/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Jumbotron -->
+<div class="jumbotron text-center" style="background-image: url('/static/sara-dubler-710148-unsplash.jpg'); background-size: 100%; height: 25%;">
+<!--div class="jumbotron text-center" style="background-image: url('/static/picnic-table-background.jpg'); background-size: 100%; height: 25%;"-->
+        <h2 class="my-0 font-weight-normal">
+        <font color = "white">What's for dinner?</font></br>
+        </h2>
+</div>
+
+<div class="container-fluid">
+     <div class="row">
+         <nav class="navbar navbar-inverse" style="background-color:black;">
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Restuarant List <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="menuList">
+                                <li> <a href="/home/all" option value="All">All Restrictions</option></a></li>
+                                <li> <a href="/home/gluten_dairy" option value="gluten_dairy">Gluten & Dairy Free</option></a></li>
+                                <li> <a href="/home/gluten" option value="Gluten">Gluten Free</option></a></li>
+                                <li> <a href="/home/dairy" option value="Dairy">Dairy Free</option></a></li>
+                                <li> <a href="/home/vegan" option value="Vegan">Vegan</option></a></li>
+                                <li> <a href="/home/vegetarian" option value="Vegetarian">Vegetarian</option></a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Restuarant Map <span class="caret"></span></a>
+                            <ul class="dropdown-menu" id="menuMap">
+                                <li> <a href="/visual/all" option value="All">All Restrictions</option></a></li>
+                                <li> <a href="/visual/gluten_dairy" option value="gluten_dairy">Gluten & Dairy Free</option></a></li>
+                                <li> <a href="/visual/gluten" option value="Gluten">Gluten Free</option></a></li>
+                                <li> <a href="/visual/dairy" option value="Dairy">Dairy Free</option></a></li>
+                                <li> <a href="/visual/vegan" option value="Vegan">Vegan</option></a></li>
+                                <li> <a href="/visual/vegetarian" option value="Vegetarian">Vegetarian</option></a></li>
+                            </ul>
+                        </li>
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a href="/about">About</a></li> 
+                        </ul>
+                </ul>
+            </div>
+        </nav>     
+    </div>     
+    
+    <div class="row">
+        <div class="col-sm-12">        
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12" style="background-color:white;">
+            <box>
+                <article style="background-color:white;">
+                    <h3 class="card-header">Restaurants in Toronto - Meeting Specific Dietary Restrictions</h2>
+                    <div>
+                        <p>What if you enjoy the exprience of eating out but have friends and family members with food
+                            alergies and restrictions.
+                        </p> 
+                        <!--p>My friends and family love eating out together, for special occassions or just to wind down over delicious food.
+                            
+                        <p> In the past year, my son started to show severre allergy to gluten. 
+                            Eating the wrong food could mean him being in bed for months, missig school, and all the fun activiites a 14
+                            year old boy enjoys like playing soccer and hanging out with friends.
+                        </p>
+                        <p>I also have friends and family members who are either vegan, vegetarians or alergic to dairy. 
+                        </p>    
+                        <p>Given these dietary restrictions, it is difficult to find suitable restaurants to eata out.
+                        </p-->        
+                        <p>Of course, you can turn to Yelp to find possible options. 
+                           What happens is that when you search for gluten-free restaurants in Toronto, close to 1500 restaurants 
+                           will be returned. However, we cannot be sure they truly offer gluten free choices. 
+                        <p>There are two ways to validate that</p>
+                        <p>Option 1. call each restaurant to confirm they do offer those choices</p>   
+                        <p>Option 2. read through reviews of each restaurant and look for comments given by customers with similar dietary restrictions. </p>     
+                        <p>Both are tedious and time consuming when done manually. 
+                        This projet is to automate Option 2.</p>
+                    </div>
+                </article>
+            </box>
+        </div>   
+    </div>
+    <div class="row">
+    
+    <!-- Thumbnails -->       
+    <a target="_blank" href="/static/blaze1.jpg">
+    <img src="/static/blaze1.jpg" alt="Blaze1">
+    </a-->
+
+    <a target="_blank" href="/static/blaze2.jpg">
+    <img src="/static/blaze2.jpg" alt="Blaze2">
+    </a-->
+
+    <a target="_blank" href="/static/glutenfree.jpg">
+    <img src="/static/glutenfree.jpg" alt="Home Made Gluten Free">
+    </a-->
+
+    <a target="_blank" href="/static/planta.jpg">
+    <img src="/static/planta.jpg" alt="Planta">
+    </a-->
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue" style="background-color:lightcyan;">
+
+     <!-- Copyright -->
+             <div
+                small class="text-muted footer-copyright text-center py-3">© 2019 Copyright:
+                <a>Winnie Wu</a> 
+            </div>
+        <!-- Copyright -->
+        </footer>
+   
+    </div>
+</div> 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="/static/js/index.js"></script>
+</body>
+</html>
