@@ -21,7 +21,7 @@ This project is to automate Option 2 by
 
 Technical Summary:
 -Data gathering: web scraping  
--Data Cleaning: Panda Dataframe
+-Data Cleaning/transformation: Panda Dataframe
 -Database: mySQL 
 -Big data: NLTK Sentiment Analysis
 -Others: Flask powered web application with D3, MAPboX 
