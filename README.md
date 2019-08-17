@@ -1,3 +1,5 @@
+This is a personal/individual project.
+
 Problem Statement:
 In the past year, my son started to show severe allergy to gluten. 
 Eating the wrong food could mean him being in bed for months, missing school, and all the fun activities a 14-year-old boy enjoys like playing soccer and hanging out with friends.
@@ -18,31 +20,31 @@ Both are tedious and time consuming when done manually.
 This project is to automate Option 2 by 
 
 Technical Summary:
-Data gathering: web scraping (
-Data Cleaning: Panda Dataframe
-Database: mySQL 
-Big data: NLTK Sentiment Analysis
-Others: Flask powered web application with D3, MAPboX 
+-Data gathering: web scraping  
+-Data Cleaning: Panda Dataframe
+-Database: mySQL 
+-Big data: NLTK Sentiment Analysis
+-Others: Flask powered web application with D3, MAPboX 
 
 Process and design
- web-scrapYelp website retrieving standard business information and all reviews for a given restaurants 
- complete data cleansing and standardization in python
- create a mysql database to host data 
- analyze data and look for with reviews with key words such as gluten, dairy, vegan, vegetarian etc., flagging them according to key words and only return those when looking for 
+-web-scrapYelp website retrieving standard business information and all reviews for a given restaurants 
+-complete data cleansing and standardization in Panda Dataframe
+-create a mysql database to host data 
+-analyze data and look for with reviews with key words such as gluten, dairy, vegan, vegetarian etc., flagging them according to key words and only return those when looking for 
   options meeting specific dietary restricition 
- use NLTK to perform Sentiment Analysis and update database 
- on GUI, allow users to see search results by
-    - gluten free
-    - dairy free
-    - vegan
-    - vegetarian
-    - meeting all 4 restrictions
+-use NLTK to perform Sentiment Analysis and update database 
+on GUI, allow users to see search results by
+    1 gluten free
+    2 dairy free
+    3 vegan
+    4 vegetarian
+    5 meeting all 4 restrictions
     
- on GUI, allow users to see search results  
-- as a list
-- as a map
- on GUI, allow users to see the reviews for a selected restaurant and also record experience after user visits the restaurant. So eventually this
+-on GUI, allow users to see search results  
+    1 as a list 
+    2 as a map
+-on GUI, allow users to see the reviews for a selected restaurant and also record experience after user visits the restaurant. So eventually this
   database not only has information from Yelp but also are enriched with my personal experience with these restaurants 
- on GUI, to allow users to flag the restaurants as a personal favorite
- on GUI, to allow users to flag the restaurants as a place never to visit again. It will no longer be shown in future search results.  
+-on GUI, to allow users to flag the restaurants as a personal favorite
+-on GUI, to allow users to flag the restaurants as a place never to visit again. It will no longer be shown in future search results.  
   
